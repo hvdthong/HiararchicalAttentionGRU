@@ -15,8 +15,8 @@ class HiararchicalDoc(BasicModule):
         self.max_len = config.sentence_max_size
         self.input_dim = config.word_embedding_dimension
         self.hidden_dim = 50
-        self.bidirectional = config.bidirectional
-        self.drop_out_rate = config.drop_out
+        self.bidirectional = True
+        self.drop_out_rate = 0.5
         self.context_vector_size = [100, 1]
         self.out_label_size = 2
 
