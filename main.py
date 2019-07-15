@@ -11,7 +11,6 @@ from data import TextDataset
 import helper
 import argparse
 
-
 torch.manual_seed(1)
 
 parser = argparse.ArgumentParser()
@@ -73,8 +72,8 @@ for epoch in range(config.epoch):
         count += 1
 
         if count % 100 == 0:
-            print("epoch", epoch, end='  ')
-            print("The loss is: %.5f" % (loss_sum/100))
+            print("epoch", epoch, end=' ')
+            print("The loss is: %.5f" % (loss_sum / 100))
             loss_sum = 0
             count = 0
 
